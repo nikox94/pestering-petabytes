@@ -1,0 +1,2142 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2016-12-17 12:53:30.180  INFO 27683 --- [           main] i.p.pestering.SentimentAppApplication    : Starting SentimentAppApplication v0.0.1-SNAPSHOT on nikola-ThinkPad-T560 with PID 27683 (/home/nikola/git/pestering-petabytes/target/sentiment-app-0.0.1-SNAPSHOT.jar started by nikola in /home/nikola/git/pestering-petabytes)
+2016-12-17 12:53:30.184  INFO 27683 --- [           main] i.p.pestering.SentimentAppApplication    : No active profile set, falling back to default profiles: default
+2016-12-17 12:53:30.418  INFO 27683 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
+2016-12-17 12:53:33.176  INFO 27683 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+2016-12-17 12:53:33.667  INFO 27683 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-17 12:53:34.547  INFO 27683 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-12-17 12:53:34.583  INFO 27683 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-17 12:53:34.584  INFO 27683 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2016-12-17 12:53:34.760  INFO 27683 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-17 12:53:34.760  INFO 27683 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4346 ms
+2016-12-17 12:53:35.285  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-17 12:53:35.293  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-17 12:53:35.821  INFO 27683 --- [           main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from class path resource [rest-default-messages.properties]
+2016-12-17 12:53:36.687  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
+2016-12-17 12:53:36.702  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 12:53:36.804  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-17 12:53:36.807  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-17 12:53:36.864  INFO 27683 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-17 12:53:36.865  INFO 27683 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-17 12:53:36.901  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2016-12-17 12:53:36.902  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 12:53:36.967  INFO 27683 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-17 12:53:37.501  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerAdapter   : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
+2016-12-17 12:53:37.504  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerAdapter   : Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 12:53:37.516  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+2016-12-17 12:53:37.516  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
+2016-12-17 12:53:37.516  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
+2016-12-17 12:53:37.522  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.523  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
+2016-12-17 12:53:37.523  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.util.MultiValueMap<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.525  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.525  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.525  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.526  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 12:53:37.528  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-17 12:53:37.529  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-17 12:53:37.529  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-17 12:53:37.529  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2016-12-17 12:53:37.530  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
+2016-12-17 12:53:37.530  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2016-12-17 12:53:37.531  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2016-12-17 12:53:37.532  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2016-12-17 12:53:37.532  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2016-12-17 12:53:37.533  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.535  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.535  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.535  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2016-12-17 12:53:37.538  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
+2016-12-17 12:53:37.539  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.539  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
+2016-12-17 12:53:37.540  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
+2016-12-17 12:53:37.540  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 12:53:37.559  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2016-12-17 12:53:37.560  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 12:53:37.652  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-17 12:53:37.653  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.654  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/actuator || /actuator.json],produces=[application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+2016-12-17 12:53:37.655  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.655  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-12-17 12:53:37.656  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.657  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-17 12:53:37.658  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.659  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.661  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-17 12:53:37.667  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.672  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.675  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.678  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 12:53:37.852  INFO 27683 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-17 12:53:37.866  INFO 27683 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-12-17 12:53:38.179  INFO 27683 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-12-17 12:53:38.186  INFO 27683 --- [           main] i.p.pestering.SentimentAppApplication    : Started SentimentAppApplication in 8.882 seconds (JVM running for 9.684)
+2016-12-17 12:53:38.186  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Reading configuration
+2016-12-17 12:53:38.200  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Done reading configuration
+2016-12-17 12:53:38.200  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting downloaders
+MarketWatch.com - Top Stories
+The Moneyologist: My stepfather left $1 million to strangers and dead people
+
+http://www.marketwatch.com/news/story.asp?guid=%7B9EFDDEC6-9018-11E6-94B4-A9EAC68D0F98%7D&siteid=rss&rss=1
+Sat Dec 17 06:45:02 EET 2016
+
+The Moneyologist: My cheating husband just inherited $3 million from his father’s estate — should I still divorce him?
+
+http://www.marketwatch.com/news/story.asp?guid=%7B7A5290FC-957D-11E6-985D-B68880713E2D%7D&siteid=rss&rss=1
+Sat Dec 17 06:19:19 EET 2016
+
+Outside the Box: Let’s get our hands on the ‘Rogue One’ Death Star plans and really build it
+
+http://www.marketwatch.com/news/story.asp?guid=%7BE3082812-C3D8-11E6-BB09-47C32D1B660C%7D&siteid=rss&rss=1
+Sat Dec 17 02:50:46 EET 2016
+
+The Wall Street Journal: Donald Trump to nominate Rep. Mick Mulvaney as budget director
+
+http://www.marketwatch.com/news/story.asp?guid=%7B26A7F250-C3ED-11E6-BB09-47C32D1B660C%7D&siteid=rss&rss=1
+Sat Dec 17 02:23:13 EET 2016
+
+Project Syndicate: Donald Trump’s foreign policy will be a gift to China and Russia
+
+http://www.marketwatch.com/news/story.asp?guid=%7B3333F912-C148-11E6-98E1-821CDDACB05D%7D&siteid=rss&rss=1
+Sat Dec 17 01:51:42 EET 2016
+
+Outside the Box: Hillary Clinton supporters need to quit whining about the Electoral College
+
+http://www.marketwatch.com/news/story.asp?guid=%7B9E6E6AF0-B716-11E6-9413-E3BECACFEDE9%7D&siteid=rss&rss=1
+Sat Dec 17 01:37:50 EET 2016
+
+Uber: Our self-driving cars are not self-driving, so no permit is required
+
+http://www.marketwatch.com/news/story.asp?guid=%7BFECC1FA2-C3DA-11E6-9465-DAC2D347F235%7D&siteid=rss&rss=1
+Sat Dec 17 01:32:33 EET 2016
+
+Conrad de Aenlle's Funds For Thought: This refundable fee rewards money-making investment pros, dings losers
+
+http://www.marketwatch.com/news/story.asp?guid=%7B64140DD8-BD8D-11E6-A55C-7986D69D84E4%7D&siteid=rss&rss=1
+Sat Dec 17 00:48:40 EET 2016
+
+NewsWatch: Stock market closes lower after China seizes U.S. underwater drone
+
+http://www.marketwatch.com/news/story.asp?guid=%7BBC8872CF-A17E-4989-B0E0-996C406D4B4F%7D&siteid=rss&rss=1
+Sat Dec 17 00:00:09 EET 2016
+
+Key Words: CEO claims Oracle is No. 1 in ‘enterprise’ cloud sales, but it’s not true
+
+http://www.marketwatch.com/news/story.asp?guid=%7B7C0FD37E-C31C-11E6-A9C9-F723B10545EE%7D&siteid=rss&rss=1
+Fri Dec 16 23:58:15 EET 2016
+
+MarketWatch.com - Stocks to Watch
+Stocks to Watch: DuPont, Nike, KB Home are stocks to watch 
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/pb4U3770rg0/story.asp
+Fri Jun 27 13:48:27 EEST 2014
+
+Stocks to Watch: Bed Bath & Beyond, GoPro, Nike are stocks to watch
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/PbGMYeMTHDA/story.asp
+Thu Jun 26 13:30:24 EEST 2014
+
+Stocks to Watch: Google, Barnes & Noble are stocks to watch Wednesday
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/0JcqATQ4zuw/story.asp
+Wed Jun 25 19:17:02 EEST 2014
+
+Stocks to Watch: Wisconsin Energy, Oracle, GE are stocks to watch
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/nAI4JLJrl00/story.asp
+Mon Jun 23 15:42:35 EEST 2014
+
+Stocks to Watch: Stocks to watch: Oracle, Smith & Wesson, Family Dollar
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/8p-MCGuASh8/story.asp
+Fri Jun 20 14:42:33 EEST 2014
+
+Stocks to Watch: BlackBerry, Oracle, Kroger are stocks to watch
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/cGupLCreSYw/story.asp
+Thu Jun 19 14:01:11 EEST 2014
+
+Stocks to Watch: FedEx, Jabil, Red Hat are stocks to watch
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/6zIOllpPpZc/story.asp
+Wed Jun 18 13:30:21 EEST 2014
+
+Stocks to Watch: Covidien, Medtronic, are stocks to watch
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/3d2CHKiROyY/story.asp
+Mon Jun 16 16:05:28 EEST 2014
+
+Stocks to Watch: Intel, Finisar are Friday’s stocks to watch
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/N6THC7RT0OE/story.asp
+Fri Jun 13 14:05:24 EEST 2014
+
+Stocks to Watch: Lululemon, Finisar, Target are stocks to watch 
+
+http://feeds.marketwatch.com/~r/marketwatch/stockstowatch/~3/3VE7mTOYXrk/story.asp
+Thu Jun 12 14:24:41 EEST 2014
+
+MarketWatch.com - Financial Services Industry News
+The Moneyologist: My stepfather left $1 million to strangers and dead people
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/2kXPM7eZCgg/story.asp
+Sat Dec 17 06:45:02 EET 2016
+
+The Moneyologist: My cheating husband just inherited $3 million from his father’s estate — should I still divorce him?
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/8A0g-qszxeo/story.asp
+Sat Dec 17 06:19:19 EET 2016
+
+Conrad de Aenlle's Funds For Thought: This refundable fee rewards money-making investment pros, dings losers
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/6YhO9Y-7PCU/story.asp
+Sat Dec 17 00:48:40 EET 2016
+
+The Ratings Game: Sell the ‘Trump bump’ in these truck stocks now, analyst says
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/fRWUI0iWFzw/story.asp
+Fri Dec 16 23:17:50 EET 2016
+
+The Tell: Should investors worry about a rising dollar?
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/JpW8c9MYnzw/story.asp
+Fri Dec 16 23:01:10 EET 2016
+
+Capitol Report: Prudential allegations complicate Wells Fargo’s work with new partners
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/Mxtg__AfdgY/story.asp
+Fri Dec 16 22:46:02 EET 2016
+
+The Wall Street Journal: Why donating shares to charity is a win-win for some investors
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/e4BYSrucx6s/story.asp
+Fri Dec 16 21:04:22 EET 2016
+
+Andrea Coombes' Ways and Means: How to have the ‘money talk’ with your parents 
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/Otnij1rq1_8/story.asp
+Fri Dec 16 20:37:27 EET 2016
+
+Top Ten: Weekend roundup: Companies with most to gain from Trump tax cuts | Dow at 20,000 | A gold bug suffers 
+
+http://feeds.marketwatch.com/~r/marketwatch/financial/~3/IzWAt4XMD4k/story.asp
+Fri Dec 16 20:22:54 EET 2016
+
+MarketWatch.com - MarketPulse
+Twitter to introduce pared down version of Vine in January
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/Ykyv5D8AMco/story.aspx
+Sat Dec 17 00:49:47 EET 2016
+
+Restoration Hardware to change name to 'RH' on Jan. 1
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/r1A1U2X4uwk/story.aspx
+Sat Dec 17 00:20:26 EET 2016
+
+Express Scripts board adds 65 million shares to buyback program
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/IOJoCFJUAX0/story.aspx
+Fri Dec 16 23:30:30 EET 2016
+
+U.S. stocks close lower; S&P 500, Nasdaq book weekly losses
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/N65kBlsPn9A/story.aspx
+Fri Dec 16 23:05:28 EET 2016
+
+Obama says Russia stopped hacking after he confronted Putin
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/Ku36f_NDkzY/story.aspx
+Fri Dec 16 22:11:09 EET 2016
+
+Oil futures score gains for the session and week
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/K0WAt5bDiDM/story.aspx
+Fri Dec 16 21:46:45 EET 2016
+
+Bullard says there's a need for another rate hike in 2017
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/B6XI5913ykY/story.aspx
+Fri Dec 16 21:01:43 EET 2016
+
+Gold futures log sixth-straight weekly loss
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/BADVOjfIZZI/story.aspx
+Fri Dec 16 20:55:48 EET 2016
+
+SEC charges broker-dealer and three traders with violating short sale rules
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/jX_RxWWjRKA/story.aspx
+Fri Dec 16 20:50:55 EET 2016
+
+Richmond Fed's Lacker calls for higher interest rates
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/Zb06QGVtjc4/story.aspx
+Fri Dec 16 20:34:01 EET 2016
+
+Baker Hughes data show U.S. oil-rig count up by 12
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/ek76w43TW9s/story.aspx
+Fri Dec 16 20:21:58 EET 2016
+
+S&P 500, Nasdaq Comp. are down but most stocks are rising
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/qvNbT7PPtSY/story.aspx
+Fri Dec 16 18:41:32 EET 2016
+
+New York Fed lowers estimate of current, next quarter GDP
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/Z7oFYzJtAZY/story.aspx
+Fri Dec 16 18:22:07 EET 2016
+
+Deutsche Bank fined by SEC, New York AG over dark pool order routing
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/mW8-wV7j6ok/story.aspx
+Fri Dec 16 18:06:22 EET 2016
+
+CORRECT: General Electric's stock leads Dow gainers after Bernstein turns bullish
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/7tqOyntr7SI/story.aspx
+Fri Dec 16 18:03:39 EET 2016
+
+Trivago trading above range in debut on the Nasdaq 
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/YvpjFyi6qIs/story.aspx
+Fri Dec 16 17:58:25 EET 2016
+
+U.S. stocks open higher; Dow takes another run at 20,000
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/tD0aMXZZ6eY/story.aspx
+Fri Dec 16 16:32:14 EET 2016
+
+Chipotle shares rise after company shakes up board, Ackman approves
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/JXODes9E4e4/story.aspx
+Fri Dec 16 16:31:16 EET 2016
+
+Wells Fargo bank branch visits declined in November
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/bCgxU4cOVTQ/story.aspx
+Fri Dec 16 16:30:27 EET 2016
+
+Steel Dynamic provides downbeat profit outlook
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/wlfhU0VqbKg/story.aspx
+Fri Dec 16 16:20:25 EET 2016
+
+Nordstrom shares fall after analyst downgrade
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/P3v54Etmyl4/story.aspx
+Fri Dec 16 15:54:18 EET 2016
+
+Cummins OKs new $1 billion stock repurchase program
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/koPwwgETq7o/story.aspx
+Fri Dec 16 15:42:54 EET 2016
+
+Mylan's first generic EpiPen launches at less than half the cost of branded version
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/5Jp0W_kPDUA/story.aspx
+Fri Dec 16 15:37:50 EET 2016
+
+Trivago IPO could end 2016 on a sour note as it prices below the expected range
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/1tNYLfJglWI/story.aspx
+Fri Dec 16 15:14:01 EET 2016
+
+Omnicom subsidiaries receive subpoenas from the Department of Justice
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/IW5t-8DhEyw/story.aspx
+Fri Dec 16 14:37:18 EET 2016
+
+Honeywell provides 2017 profit and sales outlook
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/adwCTgHi5pQ/story.aspx
+Fri Dec 16 14:01:08 EET 2016
+
+Evacuation efforts suspended in Aleppo: reports 
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/iYKFb4xlR-I/story.aspx
+Fri Dec 16 13:05:48 EET 2016
+
+Ecuador declares state of emergency after deadly mine clash: reports 
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/UenXdTWOA6s/story.aspx
+Fri Dec 16 12:33:26 EET 2016
+
+Gilead shares slip as jury sides with Merck in patent lawsuit
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/lOfnq08KWzI/story.aspx
+Fri Dec 16 00:35:21 EET 2016
+
+Agios Pharma shares dive after anemia treatment development halted
+
+http://feeds.marketwatch.com/~r/marketwatch/marketpulse/~3/1BdSTUZtHE0/story.aspx
+Thu Dec 15 23:44:10 EET 2016
+
+MarketWatch.com - Software Industry News
+Uber: Our self-driving cars are not self-driving, so no permit is required
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/xAKo6qS8SXc/story.asp
+Sat Dec 17 01:32:33 EET 2016
+
+Key Words: CEO claims Oracle is No. 1 in ‘enterprise’ cloud sales, but it’s not true
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/kAsEpStKMtc/story.asp
+Fri Dec 16 23:58:15 EET 2016
+
+Apple’s most bullish analyst bids adieu with another bold prediction
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/ierkUXc43q8/story.asp
+Fri Dec 16 23:29:47 EET 2016
+
+Trivago brings depressing year for IPOs to a close
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/lts2u0WWwe4/story.asp
+Fri Dec 16 23:05:13 EET 2016
+
+The must-see photos of 2016
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/Pw91DHM6yTs/story.asp
+Fri Dec 16 22:58:13 EET 2016
+
+How free returns on online purchases are  crippling retailers
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/yBcZK7WDuFE/story.asp
+Fri Dec 16 22:51:09 EET 2016
+
+Capitol Report: Prudential allegations complicate Wells Fargo’s work with new partners
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/Mxtg__AfdgY/story.asp
+Fri Dec 16 22:46:02 EET 2016
+
+Top Ten: Weekend roundup: Companies with most to gain from Trump tax cuts | Dow at 20,000 | A gold bug suffers 
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/IzWAt4XMD4k/story.asp
+Fri Dec 16 20:22:54 EET 2016
+
+In One Chart: Here’s a map of the largest company in every state by market cap
+
+http://feeds.marketwatch.com/~r/marketwatch/software/~3/7zY6PAQUibw/story.asp
+Fri Dec 16 18:33:30 EET 2016
+
+MarketWatch.com - Internet Industry News
+Uber: Our self-driving cars are not self-driving, so no permit is required
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/xAKo6qS8SXc/story.asp
+Sat Dec 17 01:32:33 EET 2016
+
+Trivago brings depressing year for IPOs to a close
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/lts2u0WWwe4/story.asp
+Fri Dec 16 23:05:13 EET 2016
+
+How free returns on online purchases are  crippling retailers
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/yBcZK7WDuFE/story.asp
+Fri Dec 16 22:51:09 EET 2016
+
+Capitol Report: Prudential allegations complicate Wells Fargo’s work with new partners
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/Mxtg__AfdgY/story.asp
+Fri Dec 16 22:46:02 EET 2016
+
+Top Ten: Weekend roundup: Companies with most to gain from Trump tax cuts | Dow at 20,000 | A gold bug suffers 
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/IzWAt4XMD4k/story.asp
+Fri Dec 16 20:22:54 EET 2016
+
+Need to Know: Here’s where contrarian investors plan to make their money in 2017
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/-kOuHB_pJaI/story.asp
+Fri Dec 16 17:18:15 EET 2016
+
+Deep Dive: How you can bottom-feed for stocks left behind in the Trump rally
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/ua-ncewBFOQ/story.asp
+Fri Dec 16 16:56:27 EET 2016
+
+MarketWatch First Take: Oracle keeps saying it can beat Salesforce and AWS, but numbers say otherwise
+
+http://feeds.marketwatch.com/~r/marketwatch/internet/~3/8uNhUZ2YRUA/story.asp
+Fri Dec 16 16:38:09 EET 2016
+
+2016-12-17 12:53:39.229  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting mappers
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.01,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "$1 million",
+  "type": "Quantity"
+}
+2016-12-17 12:53:41.263  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.01,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "$3 million",
+  "type": "Quantity"
+}
+2016-12-17 12:53:42.446  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.252371,
+    "type": "negative"
+  },
+  "text": "Death Star",
+  "type": "Company"
+}
+2016-12-17 12:53:43.652  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/The_Wall_Street_Journal",
+    "freebase": "http://rdf.freebase.com/ns/m.017b3j",
+    "name": "The Wall Street Journal",
+    "subType": [
+      "AwardWinner",
+      "Newspaper"
+    ],
+    "website": "http://www.wsj.com/",
+    "yago": "http://yago-knowledge.org/resource/The_Wall_Street_Journal"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "The Wall Street Journal",
+  "type": "PrintMedia"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Donald_Trump",
+    "freebase": "http://rdf.freebase.com/ns/m.0cqt90",
+    "name": "Donald Trump",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rv0ncIZwpEbGdrcN5Y29ycA",
+    "subType": [
+      "AwardNominee",
+      "AwardWinner",
+      "Celebrity",
+      "CompanyFounder",
+      "TVPersonality",
+      "TVProducer",
+      "FilmActor",
+      "TVActor"
+    ],
+    "website": "http://www.trumponline.com/",
+    "yago": "http://yago-knowledge.org/resource/Donald_Trump"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Donald Trump",
+  "type": "Person"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Mick_Mulvaney",
+    "freebase": "http://rdf.freebase.com/ns/m.0cp1sr_",
+    "name": "Mick Mulvaney"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Rep. Mick Mulvaney",
+  "type": "Person"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "budget director",
+  "type": "JobTitle"
+}
+2016-12-17 12:53:44.782  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Donald_Trump",
+    "freebase": "http://rdf.freebase.com/ns/m.0cqt90",
+    "name": "Donald Trump",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rv0ncIZwpEbGdrcN5Y29ycA",
+    "subType": [
+      "AwardNominee",
+      "AwardWinner",
+      "Celebrity",
+      "CompanyFounder",
+      "TVPersonality",
+      "TVProducer",
+      "FilmActor",
+      "TVActor"
+    ],
+    "website": "http://www.trumponline.com/",
+    "yago": "http://yago-knowledge.org/resource/Donald_Trump"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.372045,
+    "type": "positive"
+  },
+  "text": "Donald Trump",
+  "type": "Person"
+}
+{
+  "count": 2,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.372045,
+    "type": "positive"
+  },
+  "text": "foreign policy",
+  "type": "FieldTerminology"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.372045,
+    "type": "positive"
+  },
+  "text": "China",
+  "type": "Country"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.372045,
+    "type": "positive"
+  },
+  "text": "Russia",
+  "type": "Country"
+}
+2016-12-17 12:53:45.913  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.633884,
+    "type": "negative"
+  },
+  "text": "Electoral College",
+  "type": "FieldTerminology"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Hillary_Rodham_Clinton",
+    "freebase": "http://rdf.freebase.com/ns/m.0d06m5",
+    "name": "Hillary Rodham Clinton",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvV7SqpwpEbGdrcN5Y29ycA",
+    "subType": [
+      "Politician",
+      "Appointee",
+      "AwardWinner",
+      "BoardMember",
+      "Celebrity",
+      "HallOfFameInductee",
+      "OperaCharacter",
+      "Senator",
+      "U.S.Congressperson",
+      "TVActor"
+    ],
+    "website": "http://www.state.gov/secretary/index.htm",
+    "yago": "http://yago-knowledge.org/resource/Hillary_Rodham_Clinton"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.633884,
+    "type": "negative"
+  },
+  "text": "Hillary Clinton",
+  "type": "Person"
+}
+2016-12-17 12:53:47.058  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:53:47.871  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Conrad de Aenlle",
+  "type": "Person"
+}
+2016-12-17 12:53:48.979  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.326516,
+    "type": "negative"
+  },
+  "text": "Stock market",
+  "type": "FieldTerminology"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.326516,
+    "type": "negative"
+  },
+  "text": "China",
+  "type": "Country"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/United_States",
+    "dbpedia": "http://dbpedia.org/resource/United_States",
+    "freebase": "http://rdf.freebase.com/ns/m.09c7w0",
+    "name": "United States",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvVikKpwpEbGdrcN5Y29ycA",
+    "subType": [
+      "Location",
+      "Region",
+      "AdministrativeDivision",
+      "GovernmentalJurisdiction",
+      "FilmEditor"
+    ],
+    "website": "http://www.usa.gov/",
+    "yago": "http://yago-knowledge.org/resource/United_States"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.326516,
+    "type": "negative"
+  },
+  "text": "U.S.",
+  "type": "Country"
+}
+2016-12-17 12:53:50.212  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "CEO",
+  "type": "JobTitle"
+}
+{
+  "count": 2,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Oracle",
+  "type": "Company"
+}
+2016-12-17 12:53:51.209  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:58:15 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/nike",
+    "dbpedia": "http://dbpedia.org/resource/Nike,_Inc.",
+    "freebase": "http://rdf.freebase.com/ns/m.0lwkh",
+    "geo": "45.5093 -122.8299",
+    "name": "Nike, Inc.",
+    "subType": [],
+    "website": "http://www.nike.com/nikeos/p/nike/en_US/",
+    "yago": "http://yago-knowledge.org/resource/Nike,_Inc."
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Nike",
+  "type": "Company"
+}
+2016-12-17 12:53:52.383  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=nike, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 27 13:48:27 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Bed_Bath_\u0026_Beyond",
+    "freebase": "http://rdf.freebase.com/ns/m.02kpnw",
+    "name": "Bed Bath \u0026 Beyond",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvZkGWpwpEbGdrcN5Y29ycA",
+    "subType": [],
+    "website": "http://www.bedbathandbeyond.com",
+    "yago": "http://yago-knowledge.org/resource/Bed_Bath_\u0026_Beyond"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Bed Bath \u0026 Beyond",
+  "type": "Company"
+}
+{
+  "count": 3,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/nike",
+    "dbpedia": "http://dbpedia.org/resource/Nike,_Inc.",
+    "freebase": "http://rdf.freebase.com/ns/m.0lwkh",
+    "geo": "45.5093 -122.8299",
+    "name": "Nike, Inc.",
+    "subType": [],
+    "website": "http://www.nike.com/nikeos/p/nike/en_US/",
+    "yago": "http://yago-knowledge.org/resource/Nike,_Inc."
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Nike",
+  "type": "Company"
+}
+2016-12-17 12:53:53.589  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=bed bath & beyond, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 26 13:30:24 EEST 2014), EntitySentiment(companyName=nike, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 26 13:30:24 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/google",
+    "dbpedia": "http://dbpedia.org/resource/Google",
+    "freebase": "http://rdf.freebase.com/ns/m.045c7b",
+    "name": "Google",
+    "subType": [
+      "AcademicInstitution",
+      "AwardPresentingOrganization",
+      "OperatingSystemDeveloper",
+      "ProgrammingLanguageDeveloper",
+      "SoftwareDeveloper",
+      "VentureFundedCompany"
+    ],
+    "website": "http://www.google.com/",
+    "yago": "http://yago-knowledge.org/resource/Google"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Google",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/barnes-noble",
+    "dbpedia": "http://dbpedia.org/resource/Barnes_\u0026_Noble",
+    "freebase": "http://rdf.freebase.com/ns/m.01b7dt",
+    "name": "Barnes \u0026 Noble",
+    "subType": [],
+    "website": "http://www.bn.com",
+    "yago": "http://yago-knowledge.org/resource/Barnes_\u0026_Noble"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Barnes \u0026 Noble",
+  "type": "Company"
+}
+2016-12-17 12:53:54.519  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=barnes & noble, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Wed Jun 25 19:17:02 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Wisconsin_Energy_Corporation",
+    "freebase": "http://rdf.freebase.com/ns/m.0cqqg0",
+    "name": "Wisconsin Energy Corporation",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rwBBOr5wpEbGdrcN5Y29ycA",
+    "subType": [
+      "Company"
+    ],
+    "website": "http://www.wisconsinenergy.com",
+    "yago": "http://yago-knowledge.org/resource/Wisconsin_Energy_Corporation"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Wisconsin Energy",
+  "type": "Organization"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Oracle",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "GE",
+  "type": "Company"
+}
+2016-12-17 12:53:55.554  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Mon Jun 23 15:42:35 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Oracle",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Smith_\u0026_Wesson",
+    "freebase": "http://rdf.freebase.com/ns/m.019y_h",
+    "name": "Smith \u0026 Wesson",
+    "subType": [],
+    "website": "http://www.smith-wesson.com",
+    "yago": "http://yago-knowledge.org/resource/Smith_\u0026_Wesson"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Smith \u0026 Wesson",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Family_Dollar",
+    "freebase": "http://rdf.freebase.com/ns/m.04c5hg",
+    "name": "Family Dollar",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvrgdupwpEbGdrcN5Y29ycA",
+    "subType": [],
+    "website": "http://www.familydollar.com/",
+    "yago": "http://yago-knowledge.org/resource/Family_Dollar"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Family Dollar",
+  "type": "Company"
+}
+2016-12-17 12:53:56.579  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 20 14:42:33 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "BlackBerry",
+  "type": "Product"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Oracle",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Kroger",
+    "freebase": "http://rdf.freebase.com/ns/m.0204w9",
+    "name": "Kroger",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rwGH62pwpEbGdrcN5Y29ycA",
+    "subType": [],
+    "website": "http://www.thekrogerco.com/",
+    "yago": "http://yago-knowledge.org/resource/Kroger"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Kroger",
+  "type": "Company"
+}
+2016-12-17 12:53:57.606  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 19 14:01:11 EEST 2014), EntitySentiment(companyName=kroger, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 19 14:01:11 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/fedex",
+    "dbpedia": "http://dbpedia.org/resource/FedEx",
+    "freebase": "http://rdf.freebase.com/ns/m.0k9s1",
+    "name": "FedEx",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvViNQ5wpEbGdrcN5Y29ycA",
+    "website": "http://www.fedex.com/",
+    "yago": "http://yago-knowledge.org/resource/FedEx"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "FedEx",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/red-hat",
+    "dbpedia": "http://dbpedia.org/resource/Red_Hat",
+    "freebase": "http://rdf.freebase.com/ns/m.02h5b_x",
+    "name": "Red Hat",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rv1KYSpwpEbGdrcN5Y29ycA",
+    "subType": [
+      "SoftwareDeveloper",
+      "VentureFundedCompany",
+      "VideoGamePublisher"
+    ],
+    "website": "http://www.redhat.com/",
+    "yago": "http://yago-knowledge.org/resource/Red_Hat"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Red Hat",
+  "type": "Company"
+}
+2016-12-17 12:53:58.704  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=fedex, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Wed Jun 18 13:30:21 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/covidien",
+    "dbpedia": "http://dbpedia.org/resource/Covidien",
+    "freebase": "http://rdf.freebase.com/ns/m.027wyzl",
+    "name": "Covidien",
+    "yago": "http://yago-knowledge.org/resource/Covidien"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Covidien",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/medtronic",
+    "dbpedia": "http://dbpedia.org/resource/Medtronic",
+    "freebase": "http://rdf.freebase.com/ns/m.03z4j3",
+    "name": "Medtronic",
+    "subType": [
+      "VentureFundedCompany"
+    ],
+    "website": "http://www.medtronic.com/",
+    "yago": "http://yago-knowledge.org/resource/Medtronic"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Medtronic",
+  "type": "Company"
+}
+2016-12-17 12:53:59.755  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Intel",
+    "freebase": "http://rdf.freebase.com/ns/m.03s7h",
+    "name": "Intel",
+    "subType": [
+      "OperatingSystemDeveloper",
+      "ProcessorManufacturer",
+      "SoftwareDeveloper"
+    ]
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Intel",
+  "type": "Company"
+}
+{
+  "count": 3,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Finisar",
+    "freebase": "http://rdf.freebase.com/ns/m.09v7mjj",
+    "name": "Finisar",
+    "website": "http://www.finisar.com"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Finisar",
+  "type": "Company"
+}
+2016-12-17 12:54:00.798  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=intel, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 13 14:05:24 EEST 2014)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Finisar",
+    "freebase": "http://rdf.freebase.com/ns/m.09v7mjj",
+    "name": "Finisar",
+    "website": "http://www.finisar.com"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Finisar",
+  "type": "Company"
+}
+2016-12-17 12:54:01.877  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.01,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "$1 million",
+  "type": "Quantity"
+}
+2016-12-17 12:54:02.814  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.01,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "$3 million",
+  "type": "Quantity"
+}
+2016-12-17 12:54:03.725  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Conrad de Aenlle",
+  "type": "Person"
+}
+2016-12-17 12:54:04.690  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "analyst",
+  "type": "JobTitle"
+}
+2016-12-17 12:54:05.471  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:06.304  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.26277,
+    "type": "negative"
+  },
+  "text": "Wells Fargo",
+  "type": "Company"
+}
+2016-12-17 12:54:07.224  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 2,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/The_Wall_Street_Journal",
+    "freebase": "http://rdf.freebase.com/ns/m.017b3j",
+    "name": "The Wall Street Journal",
+    "subType": [
+      "AwardWinner",
+      "Newspaper"
+    ],
+    "website": "http://www.wsj.com/",
+    "yago": "http://yago-knowledge.org/resource/The_Wall_Street_Journal"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.497336,
+    "type": "positive"
+  },
+  "text": "The Wall Street Journal",
+  "type": "PrintMedia"
+}
+2016-12-17 12:54:08.031  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Andrea Coombes",
+  "type": "Person"
+}
+2016-12-17 12:54:09.094  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.613112,
+    "type": "negative"
+  },
+  "text": "Dow",
+  "type": "FinancialMarketIndex"
+}
+2016-12-17 12:54:10.201  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/twitter",
+    "dbpedia": "http://dbpedia.org/resource/Twitter",
+    "freebase": "http://rdf.freebase.com/ns/m.0289n8t",
+    "name": "Twitter",
+    "subType": [
+      "Website",
+      "VentureFundedCompany"
+    ],
+    "website": "http://twitter.com/"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.542371,
+    "type": "positive"
+  },
+  "text": "Twitter",
+  "type": "Company"
+}
+2016-12-17 12:54:11.221  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Restoration_Hardware",
+    "freebase": "http://rdf.freebase.com/ns/m.0b1vl1",
+    "name": "Restoration Hardware",
+    "subType": [],
+    "website": "http://www.restorationhardware.com/",
+    "yago": "http://yago-knowledge.org/resource/Restoration_Hardware"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Restoration Hardware",
+  "type": "Company"
+}
+2016-12-17 12:54:12.174  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Express_Scripts",
+    "freebase": "http://rdf.freebase.com/ns/m.096g9q",
+    "name": "Express Scripts",
+    "subType": [],
+    "website": "http://www.express-scripts.com/",
+    "yago": "http://yago-knowledge.org/resource/Express_Scripts"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Express Scripts",
+  "type": "Company"
+}
+2016-12-17 12:54:13.242  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/United_States",
+    "dbpedia": "http://dbpedia.org/resource/United_States",
+    "freebase": "http://rdf.freebase.com/ns/m.09c7w0",
+    "name": "United States",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvVikKpwpEbGdrcN5Y29ycA",
+    "subType": [
+      "Location",
+      "Region",
+      "AdministrativeDivision",
+      "GovernmentalJurisdiction",
+      "FilmEditor"
+    ],
+    "website": "http://www.usa.gov/",
+    "yago": "http://yago-knowledge.org/resource/United_States"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.505188,
+    "type": "negative"
+  },
+  "text": "U.S.",
+  "type": "Country"
+}
+2016-12-17 12:54:15.197  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 2,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Barack_Obama",
+    "freebase": "http://rdf.freebase.com/ns/m.02mjmr",
+    "name": "Barack Obama",
+    "subType": [
+      "Politician",
+      "President",
+      "Appointer",
+      "AwardWinner",
+      "Celebrity",
+      "PoliticalAppointer",
+      "U.S.Congressperson",
+      "USPresident",
+      "TVActor"
+    ],
+    "website": "http://www.whitehouse.gov/",
+    "yago": "http://yago-knowledge.org/resource/Barack_Obama"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.531042,
+    "type": "negative"
+  },
+  "text": "Obama",
+  "type": "Person"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/Belarus",
+    "dbpedia": "http://dbpedia.org/resource/Belarus",
+    "freebase": "http://rdf.freebase.com/ns/m.0163v",
+    "name": "Belarus",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvVjw35wpEbGdrcN5Y29ycA",
+    "subType": [
+      "Location",
+      "GovernmentalJurisdiction"
+    ],
+    "website": "http://www.president.gov.by/en/",
+    "yago": "http://yago-knowledge.org/resource/Belarus"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.531042,
+    "type": "negative"
+  },
+  "text": "Russia",
+  "type": "Country"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.531042,
+    "type": "negative"
+  },
+  "text": "Putin",
+  "type": "Person"
+}
+2016-12-17 12:54:16.173  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Oil futures",
+  "type": "FieldTerminology"
+}
+2016-12-17 12:54:17.172  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.431419,
+    "type": "negative"
+  },
+  "text": "Bullard",
+  "type": "Person"
+}
+2016-12-17 12:54:18.181  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:19.164  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission",
+    "freebase": "http://rdf.freebase.com/ns/m.0fbr4",
+    "name": "U.S. Securities and Exchange Commission",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rwGnYuJwpEbGdrcN5Y29ycA",
+    "subType": [
+      "GovernmentAgency",
+      "GovernmentalBody"
+    ],
+    "website": "http://www.sec.gov"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.704494,
+    "type": "negative"
+  },
+  "text": "SEC",
+  "type": "Organization"
+}
+2016-12-17 12:54:20.209  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "interest rates",
+  "type": "FieldTerminology"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Richmond",
+  "type": "Person"
+}
+2016-12-17 12:54:21.049  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Baker Hughes",
+  "type": "Person"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/United_States",
+    "dbpedia": "http://dbpedia.org/resource/United_States",
+    "freebase": "http://rdf.freebase.com/ns/m.09c7w0",
+    "name": "United States",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvVikKpwpEbGdrcN5Y29ycA",
+    "subType": [
+      "Location",
+      "Region",
+      "AdministrativeDivision",
+      "GovernmentalJurisdiction",
+      "FilmEditor"
+    ],
+    "website": "http://www.usa.gov/",
+    "yago": "http://yago-knowledge.org/resource/United_States"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "U.S.",
+  "type": "Country"
+}
+2016-12-17 12:54:22.178  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=baker hughes, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 20:21:58 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.44007,
+    "type": "negative"
+  },
+  "text": "Nasdaq",
+  "type": "FinancialMarketIndex"
+}
+2016-12-17 12:54:23.201  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.564162,
+    "type": "negative"
+  },
+  "text": "New York",
+  "type": "City"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Federal_Reserve_System",
+    "freebase": "http://rdf.freebase.com/ns/m.02xmb",
+    "name": "Federal Reserve System",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvct-4JwpEbGdrcN5Y29ycA",
+    "website": "http://www.federalreserve.gov/",
+    "yago": "http://yago-knowledge.org/resource/Federal_Reserve_System"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.564162,
+    "type": "negative"
+  },
+  "text": "Fed",
+  "type": "Organization"
+}
+2016-12-17 12:54:24.225  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.474325,
+    "type": "negative"
+  },
+  "text": "Deutsche Bank",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.474326,
+    "type": "negative"
+  },
+  "text": "SEC",
+  "type": "Organization"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.50308,
+    "type": "negative"
+  },
+  "text": "New York AG",
+  "type": "Company"
+}
+2016-12-17 12:54:25.186  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/general-electric",
+    "dbpedia": "http://dbpedia.org/resource/General_Electric",
+    "freebase": "http://rdf.freebase.com/ns/m.03bnb",
+    "name": "General Electric",
+    "subType": [
+      "ProductionCompany"
+    ],
+    "website": "http://www.ge.com/",
+    "yago": "http://yago-knowledge.org/resource/General_Electric"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "General Electric",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Bernstein",
+  "type": "Person"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Dow",
+  "type": "Company"
+}
+2016-12-17 12:54:26.581  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=general electric, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 18:03:39 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Nasdaq",
+  "type": "FinancialMarketIndex"
+}
+2016-12-17 12:54:27.628  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.348089,
+    "type": "negative"
+  },
+  "text": "Dow",
+  "type": "Person"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/United_States",
+    "dbpedia": "http://dbpedia.org/resource/United_States",
+    "freebase": "http://rdf.freebase.com/ns/m.09c7w0",
+    "name": "United States",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvVikKpwpEbGdrcN5Y29ycA",
+    "subType": [
+      "Location",
+      "Region",
+      "AdministrativeDivision",
+      "GovernmentalJurisdiction",
+      "FilmEditor"
+    ],
+    "website": "http://www.usa.gov/",
+    "yago": "http://yago-knowledge.org/resource/United_States"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "U.S.",
+  "type": "Country"
+}
+2016-12-17 12:54:28.432  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Ackman",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Chipotle",
+  "type": "Company"
+}
+2016-12-17 12:54:29.416  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Wells Fargo",
+  "type": "City"
+}
+2016-12-17 12:54:30.369  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 16:30:27 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:31.431  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Nordstrom",
+    "freebase": "http://rdf.freebase.com/ns/m.01fc_q",
+    "geo": "47.61237 -122.3365",
+    "name": "Nordstrom",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvt7rWpwpEbGdrcN5Y29ycA",
+    "subType": [],
+    "website": "http://www.nordstrom.com/",
+    "yago": "http://yago-knowledge.org/resource/Nordstrom"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.484957,
+    "type": "negative"
+  },
+  "text": "Nordstrom",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.484957,
+    "type": "negative"
+  },
+  "text": "analyst",
+  "type": "JobTitle"
+}
+2016-12-17 12:54:32.328  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=nordstrom, sentiment=-0.484957, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 15:54:18 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.480723,
+    "type": "positive"
+  },
+  "text": "Cummins",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "$1 billion",
+  "type": "Quantity"
+}
+2016-12-17 12:54:33.397  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=cummins, sentiment=0.480723, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 15:42:54 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Mylan",
+    "freebase": "http://rdf.freebase.com/ns/m.07ndr3",
+    "name": "Mylan"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.553278,
+    "type": "negative"
+  },
+  "text": "Mylan",
+  "type": "Company"
+}
+2016-12-17 12:54:34.261  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:35.465  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "dbpedia": "http://dbpedia.org/resource/Omnicom_Group",
+    "freebase": "http://rdf.freebase.com/ns/m.02__5r",
+    "name": "Omnicom Group",
+    "subType": [],
+    "website": "http://www.omnicomgroup.com",
+    "yago": "http://yago-knowledge.org/resource/Omnicom_Group"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Omnicom",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Department of Justice",
+  "type": "Organization"
+}
+2016-12-17 12:54:36.465  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/honeywell",
+    "dbpedia": "http://dbpedia.org/resource/Honeywell",
+    "freebase": "http://rdf.freebase.com/ns/m.01gx66",
+    "name": "Honeywell",
+    "subType": [],
+    "website": "http://www.honeywell.com/",
+    "yago": "http://yago-knowledge.org/resource/Honeywell"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Honeywell",
+  "type": "Company"
+}
+2016-12-17 12:54:37.485  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.36602,
+    "type": "negative"
+  },
+  "text": "Aleppo",
+  "type": "City"
+}
+2016-12-17 12:54:38.458  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "disambiguated": {
+    "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/Ecuador",
+    "dbpedia": "http://dbpedia.org/resource/Ecuador",
+    "freebase": "http://rdf.freebase.com/ns/m.060y27",
+    "name": "Ecuador",
+    "opencyc": "http://sw.opencyc.org/concept/Mx4rvVjpApwpEbGdrcN5Y29ycA",
+    "subType": [
+      "Location",
+      "GovernmentalJurisdiction"
+    ],
+    "yago": "http://yago-knowledge.org/resource/Ecuador"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.655095,
+    "type": "negative"
+  },
+  "text": "Ecuador",
+  "type": "Country"
+}
+2016-12-17 12:54:39.557  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:40.687  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.389306,
+    "type": "negative"
+  },
+  "text": "Agios Pharma",
+  "type": "Company"
+}
+2016-12-17 12:54:41.758  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:42.829  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "CEO",
+  "type": "JobTitle"
+}
+{
+  "count": 2,
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "Oracle",
+  "type": "Company"
+}
+2016-12-17 12:54:43.960  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:58:15 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.674848,
+    "type": "positive"
+  },
+  "text": "Apple",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.674848,
+    "type": "positive"
+  },
+  "text": "analyst",
+  "type": "JobTitle"
+}
+2016-12-17 12:54:45.202  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=apple, sentiment=0.674848, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:29:47 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.719186,
+    "type": "negative"
+  },
+  "text": "Trivago",
+  "type": "Person"
+}
+2016-12-17 12:54:46.317  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:47.367  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:48.300  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.26277,
+    "type": "negative"
+  },
+  "text": "Wells Fargo",
+  "type": "Company"
+}
+2016-12-17 12:54:49.210  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.613112,
+    "type": "negative"
+  },
+  "text": "Dow",
+  "type": "FinancialMarketIndex"
+}
+2016-12-17 12:54:50.235  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:51.343  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:52.374  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.719186,
+    "type": "negative"
+  },
+  "text": "Trivago",
+  "type": "Person"
+}
+2016-12-17 12:54:53.484  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:54.557  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.26277,
+    "type": "negative"
+  },
+  "text": "Wells Fargo",
+  "type": "Company"
+}
+2016-12-17 12:54:55.552  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": -0.613112,
+    "type": "negative"
+  },
+  "text": "Dow",
+  "type": "FinancialMarketIndex"
+}
+2016-12-17 12:54:56.661  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:57.712  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+2016-12-17 12:54:58.631  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
+CONTENT
+{
+  "count": 1,
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.248593,
+    "type": "positive"
+  },
+  "text": "Oracle",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/salesforce",
+    "dbpedia": "http://dbpedia.org/resource/Salesforce.com",
+    "freebase": "http://rdf.freebase.com/ns/m.07btr5",
+    "name": "Salesforce.com",
+    "subType": [
+      "VentureFundedCompany"
+    ],
+    "website": "http://www.salesforce.com/",
+    "yago": "http://yago-knowledge.org/resource/Salesforce.com"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "score": 0.248593,
+    "type": "positive"
+  },
+  "text": "Salesforce",
+  "type": "Company"
+}
+{
+  "count": 1,
+  "disambiguated": {
+    "crunchbase": "http://www.crunchbase.com/company/marketwatch",
+    "dbpedia": "http://dbpedia.org/resource/MarketWatch",
+    "freebase": "http://rdf.freebase.com/ns/m.0c1wvb",
+    "name": "MarketWatch",
+    "subType": [
+      "Website"
+    ],
+    "yago": "http://yago-knowledge.org/resource/MarketWatch"
+  },
+  "relevance": 0.33,
+  "sentiment": {
+    "type": "neutral"
+  },
+  "text": "MarketWatch",
+  "type": "Company"
+}
+2016-12-17 12:54:59.656  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.248593, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 16:38:09 EET 2016)]
+2016-12-17 12:54:59.657  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting reduce and store workers
+Saved null: oracle
+Saved null: nike
+Saved null: bed bath & beyond
+Saved null: nike
+Saved null: barnes & noble
+Saved null: oracle
+Saved null: oracle
+Saved null: oracle
+Saved null: kroger
+Saved null: fedex
+Saved null: intel
+Saved null: wells fargo
+Saved null: baker hughes
+Saved null: general electric
+Saved null: wells fargo
+Saved null: nordstrom
+Saved null: cummins
+Saved null: oracle
+Saved null: apple
+Saved null: wells fargo
+Saved null: wells fargo
+Saved null: oracle
+2016-12-17 12:55:06.109  INFO 27683 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
+2016-12-17 12:55:06.113  INFO 27683 --- [       Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2016-12-17 12:55:06.123  INFO 27683 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
