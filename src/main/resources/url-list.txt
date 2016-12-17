@@ -1,0 +1,6 @@
+http://feeds.marketwatch.com/marketwatch/topstories/
+http://feeds.marketwatch.com/marketwatch/StockstoWatch/
+http://feeds.marketwatch.com/marketwatch/financial/
+http://feeds.marketwatch.com/marketwatch/marketpulse/
+http://feeds.marketwatch.com/marketwatch/software/
+http://feeds.marketwatch.com/marketwatch/internet/
