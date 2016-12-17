@@ -7,91 +7,91 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.2.RELEASE)
 
-2016-12-17 12:53:30.180  INFO 27683 --- [           main] i.p.pestering.SentimentAppApplication    : Starting SentimentAppApplication v0.0.1-SNAPSHOT on nikola-ThinkPad-T560 with PID 27683 (/home/nikola/git/pestering-petabytes/target/sentiment-app-0.0.1-SNAPSHOT.jar started by nikola in /home/nikola/git/pestering-petabytes)
-2016-12-17 12:53:30.184  INFO 27683 --- [           main] i.p.pestering.SentimentAppApplication    : No active profile set, falling back to default profiles: default
-2016-12-17 12:53:30.418  INFO 27683 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
-2016-12-17 12:53:33.176  INFO 27683 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
-2016-12-17 12:53:33.667  INFO 27683 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-12-17 12:53:34.547  INFO 27683 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
-2016-12-17 12:53:34.583  INFO 27683 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2016-12-17 12:53:34.584  INFO 27683 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
-2016-12-17 12:53:34.760  INFO 27683 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2016-12-17 12:53:34.760  INFO 27683 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4346 ms
-2016-12-17 12:53:35.285  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2016-12-17 12:53:35.293  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
-2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
-2016-12-17 12:53:35.294  INFO 27683 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
-2016-12-17 12:53:35.821  INFO 27683 --- [           main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from class path resource [rest-default-messages.properties]
-2016-12-17 12:53:36.687  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
-2016-12-17 12:53:36.702  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
-2016-12-17 12:53:36.804  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2016-12-17 12:53:36.807  INFO 27683 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2016-12-17 12:53:36.864  INFO 27683 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-12-17 12:53:36.865  INFO 27683 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-12-17 12:53:36.901  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
-2016-12-17 12:53:36.902  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
-2016-12-17 12:53:36.967  INFO 27683 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-12-17 12:53:37.501  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerAdapter   : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
-2016-12-17 12:53:37.504  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerAdapter   : Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
-2016-12-17 12:53:37.516  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
-2016-12-17 12:53:37.516  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
-2016-12-17 12:53:37.516  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
-2016-12-17 12:53:37.522  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.523  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
-2016-12-17 12:53:37.523  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.util.MultiValueMap<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.524  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.525  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.525  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.525  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.526  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2016-12-17 12:53:37.528  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2016-12-17 12:53:37.529  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2016-12-17 12:53:37.529  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2016-12-17 12:53:37.529  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
-2016-12-17 12:53:37.530  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
-2016-12-17 12:53:37.530  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
-2016-12-17 12:53:37.531  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
-2016-12-17 12:53:37.532  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
-2016-12-17 12:53:37.532  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
-2016-12-17 12:53:37.533  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.535  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.535  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.535  INFO 27683 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
-2016-12-17 12:53:37.538  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
-2016-12-17 12:53:37.539  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.539  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
-2016-12-17 12:53:37.540  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
-2016-12-17 12:53:37.540  INFO 27683 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
-2016-12-17 12:53:37.559  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
-2016-12-17 12:53:37.560  INFO 27683 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
-2016-12-17 12:53:37.652  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
-2016-12-17 12:53:37.653  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.654  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/actuator || /actuator.json],produces=[application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
-2016-12-17 12:53:37.655  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.655  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
-2016-12-17 12:53:37.656  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.657  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
-2016-12-17 12:53:37.658  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.659  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.661  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
-2016-12-17 12:53:37.667  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.672  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.675  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.678  INFO 27683 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2016-12-17 12:53:37.852  INFO 27683 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2016-12-17 12:53:37.866  INFO 27683 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2016-12-17 12:53:38.179  INFO 27683 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
-2016-12-17 12:53:38.186  INFO 27683 --- [           main] i.p.pestering.SentimentAppApplication    : Started SentimentAppApplication in 8.882 seconds (JVM running for 9.684)
-2016-12-17 12:53:38.186  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Reading configuration
-2016-12-17 12:53:38.200  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Done reading configuration
-2016-12-17 12:53:38.200  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting downloaders
+2016-12-17 13:09:35.028  INFO 28747 --- [           main] i.p.pestering.SentimentAppApplication    : Starting SentimentAppApplication v0.0.1-SNAPSHOT on nikola-ThinkPad-T560 with PID 28747 (/home/nikola/git/pestering-petabytes/target/sentiment-app-0.0.1-SNAPSHOT.jar started by nikola in /home/nikola/git/pestering-petabytes)
+2016-12-17 13:09:35.041  INFO 28747 --- [           main] i.p.pestering.SentimentAppApplication    : No active profile set, falling back to default profiles: default
+2016-12-17 13:09:35.181  INFO 28747 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 13:09:35 EET 2016]; root of context hierarchy
+2016-12-17 13:09:37.220  INFO 28747 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+2016-12-17 13:09:37.833  INFO 28747 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-17 13:09:38.584  INFO 28747 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-12-17 13:09:38.603  INFO 28747 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-17 13:09:38.604  INFO 28747 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2016-12-17 13:09:38.734  INFO 28747 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-17 13:09:38.735  INFO 28747 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3557 ms
+2016-12-17 13:09:39.129  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-17 13:09:39.137  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2016-12-17 13:09:39.138  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-17 13:09:39.138  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-17 13:09:39.138  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-17 13:09:39.138  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-17 13:09:39.139  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-17 13:09:39.139  INFO 28747 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-17 13:09:39.787  INFO 28747 --- [           main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from class path resource [rest-default-messages.properties]
+2016-12-17 13:09:40.701  INFO 28747 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 13:09:35 EET 2016]; root of context hierarchy
+2016-12-17 13:09:40.723  INFO 28747 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 13:09:40.833  INFO 28747 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-17 13:09:40.835  INFO 28747 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-17 13:09:40.894  INFO 28747 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-17 13:09:40.894  INFO 28747 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-17 13:09:40.922  INFO 28747 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2016-12-17 13:09:40.922  INFO 28747 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 13:09:40.955  INFO 28747 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-17 13:09:41.425  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerAdapter   : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 13:09:35 EET 2016]; root of context hierarchy
+2016-12-17 13:09:41.428  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerAdapter   : Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 13:09:41.435  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+2016-12-17 13:09:41.435  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
+2016-12-17 13:09:41.435  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
+2016-12-17 13:09:41.440  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.440  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.441  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.util.MultiValueMap<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.441  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.441  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
+2016-12-17 13:09:41.441  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.442  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.442  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.442  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.442  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.442  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-17 13:09:41.444  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-17 13:09:41.445  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-17 13:09:41.445  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
+2016-12-17 13:09:41.445  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2016-12-17 13:09:41.447  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-17 13:09:41.448  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2016-12-17 13:09:41.449  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.450  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.450  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.450  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2016-12-17 13:09:41.450  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2016-12-17 13:09:41.451  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2016-12-17 13:09:41.451  INFO 28747 --- [           main] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2016-12-17 13:09:41.453  INFO 28747 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
+2016-12-17 13:09:41.454  INFO 28747 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.454  INFO 28747 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
+2016-12-17 13:09:41.455  INFO 28747 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
+2016-12-17 13:09:41.455  INFO 28747 --- [           main] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-17 13:09:41.476  INFO 28747 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2016-12-17 13:09:41.477  INFO 28747 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2016-12-17 13:09:41.574  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-17 13:09:41.574  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.575  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/actuator || /actuator.json],produces=[application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+2016-12-17 13:09:41.575  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-12-17 13:09:41.576  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.577  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.578  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.578  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.579  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.582  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.587  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-17 13:09:41.592  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-17 13:09:41.593  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.593  INFO 28747 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-17 13:09:41.780  INFO 28747 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-17 13:09:41.798  INFO 28747 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-12-17 13:09:42.071  INFO 28747 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-12-17 13:09:42.079  INFO 28747 --- [           main] i.p.pestering.SentimentAppApplication    : Started SentimentAppApplication in 7.837 seconds (JVM running for 8.37)
+2016-12-17 13:09:42.079  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : Reading configuration
+2016-12-17 13:09:42.095  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : Done reading configuration
+2016-12-17 13:09:42.096  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting downloaders
 MarketWatch.com - Top Stories
 The Moneyologist: My stepfather left $1 million to strangers and dead people
 
@@ -478,7 +478,7 @@ MarketWatch First Take: Oracle keeps saying it can beat Salesforce and AWS, but 
 http://feeds.marketwatch.com/~r/marketwatch/internet/~3/8uNhUZ2YRUA/story.asp
 Fri Dec 16 16:38:09 EET 2016
 
-2016-12-17 12:53:39.229  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting mappers
+2016-12-17 13:09:43.511  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting mappers
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -490,7 +490,7 @@ CONTENT
   "text": "$1 million",
   "type": "Quantity"
 }
-2016-12-17 12:53:41.263  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:45.476  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -502,7 +502,7 @@ CONTENT
   "text": "$3 million",
   "type": "Quantity"
 }
-2016-12-17 12:53:42.446  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:46.558  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -515,7 +515,7 @@ CONTENT
   "text": "Death Star",
   "type": "Company"
 }
-2016-12-17 12:53:43.652  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:47.584  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -588,7 +588,7 @@ CONTENT
   "text": "budget director",
   "type": "JobTitle"
 }
-2016-12-17 12:53:44.782  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:48.607  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -649,7 +649,7 @@ CONTENT
   "text": "Russia",
   "type": "Country"
 }
-2016-12-17 12:53:45.913  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:49.735  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -692,10 +692,10 @@ CONTENT
   "text": "Hillary Clinton",
   "type": "Person"
 }
-2016-12-17 12:53:47.058  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:50.817  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:53:47.871  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:51.867  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -707,7 +707,7 @@ CONTENT
   "text": "Conrad de Aenlle",
   "type": "Person"
 }
-2016-12-17 12:53:48.979  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:53.009  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -756,7 +756,7 @@ CONTENT
   "text": "U.S.",
   "type": "Country"
 }
-2016-12-17 12:53:50.212  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:09:54.223  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -777,7 +777,7 @@ CONTENT
   "text": "Oracle",
   "type": "Company"
 }
-2016-12-17 12:53:51.209  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:58:15 EET 2016)]
+2016-12-17 13:09:55.388  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:58:15 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -799,7 +799,7 @@ CONTENT
   "text": "Nike",
   "type": "Company"
 }
-2016-12-17 12:53:52.383  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=nike, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 27 13:48:27 EEST 2014)]
+2016-12-17 13:09:56.490  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=nike, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 27 13:48:27 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -839,7 +839,7 @@ CONTENT
   "text": "Nike",
   "type": "Company"
 }
-2016-12-17 12:53:53.589  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=bed bath & beyond, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 26 13:30:24 EEST 2014), EntitySentiment(companyName=nike, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 26 13:30:24 EEST 2014)]
+2016-12-17 13:09:57.596  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=bed bath & beyond, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 26 13:30:24 EEST 2014), EntitySentiment(companyName=nike, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 26 13:30:24 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -885,7 +885,7 @@ CONTENT
   "text": "Barnes \u0026 Noble",
   "type": "Company"
 }
-2016-12-17 12:53:54.519  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=barnes & noble, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Wed Jun 25 19:17:02 EEST 2014)]
+2016-12-17 13:09:58.820  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=barnes & noble, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Wed Jun 25 19:17:02 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -926,7 +926,7 @@ CONTENT
   "text": "GE",
   "type": "Company"
 }
-2016-12-17 12:53:55.554  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Mon Jun 23 15:42:35 EEST 2014)]
+2016-12-17 13:09:59.866  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Mon Jun 23 15:42:35 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -973,7 +973,7 @@ CONTENT
   "text": "Family Dollar",
   "type": "Company"
 }
-2016-12-17 12:53:56.579  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 20 14:42:33 EEST 2014)]
+2016-12-17 13:10:00.970  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 20 14:42:33 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1012,7 +1012,7 @@ CONTENT
   "text": "Kroger",
   "type": "Company"
 }
-2016-12-17 12:53:57.606  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 19 14:01:11 EEST 2014), EntitySentiment(companyName=kroger, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 19 14:01:11 EEST 2014)]
+2016-12-17 13:10:02.203  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 19 14:01:11 EEST 2014), EntitySentiment(companyName=kroger, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Thu Jun 19 14:01:11 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1056,7 +1056,7 @@ CONTENT
   "text": "Red Hat",
   "type": "Company"
 }
-2016-12-17 12:53:58.704  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=fedex, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Wed Jun 18 13:30:21 EEST 2014)]
+2016-12-17 13:10:03.328  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=fedex, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Wed Jun 18 13:30:21 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1095,7 +1095,7 @@ CONTENT
   "text": "Medtronic",
   "type": "Company"
 }
-2016-12-17 12:53:59.755  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:04.476  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1132,7 +1132,7 @@ CONTENT
   "text": "Finisar",
   "type": "Company"
 }
-2016-12-17 12:54:00.798  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=intel, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 13 14:05:24 EEST 2014)]
+2016-12-17 13:10:05.690  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=intel, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Jun 13 14:05:24 EEST 2014)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1150,7 +1150,7 @@ CONTENT
   "text": "Finisar",
   "type": "Company"
 }
-2016-12-17 12:54:01.877  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:06.751  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1162,7 +1162,7 @@ CONTENT
   "text": "$1 million",
   "type": "Quantity"
 }
-2016-12-17 12:54:02.814  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:07.648  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1174,7 +1174,7 @@ CONTENT
   "text": "$3 million",
   "type": "Quantity"
 }
-2016-12-17 12:54:03.725  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:08.685  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1186,7 +1186,7 @@ CONTENT
   "text": "Conrad de Aenlle",
   "type": "Person"
 }
-2016-12-17 12:54:04.690  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:09.810  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1198,10 +1198,10 @@ CONTENT
   "text": "analyst",
   "type": "JobTitle"
 }
-2016-12-17 12:54:05.471  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:10.879  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:06.304  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:11.848  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1214,7 +1214,7 @@ CONTENT
   "text": "Wells Fargo",
   "type": "Company"
 }
-2016-12-17 12:54:07.224  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
+2016-12-17 13:10:12.942  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1238,7 +1238,7 @@ CONTENT
   "text": "The Wall Street Journal",
   "type": "PrintMedia"
 }
-2016-12-17 12:54:08.031  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:13.894  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1250,7 +1250,7 @@ CONTENT
   "text": "Andrea Coombes",
   "type": "Person"
 }
-2016-12-17 12:54:09.094  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:14.999  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1263,7 +1263,7 @@ CONTENT
   "text": "Dow",
   "type": "FinancialMarketIndex"
 }
-2016-12-17 12:54:10.201  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:17.379  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1287,7 +1287,7 @@ CONTENT
   "text": "Twitter",
   "type": "Company"
 }
-2016-12-17 12:54:11.221  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:18.488  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1307,7 +1307,7 @@ CONTENT
   "text": "Restoration Hardware",
   "type": "Company"
 }
-2016-12-17 12:54:12.174  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:19.600  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1327,7 +1327,7 @@ CONTENT
   "text": "Express Scripts",
   "type": "Company"
 }
-2016-12-17 12:54:13.242  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:20.439  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1356,7 +1356,7 @@ CONTENT
   "text": "U.S.",
   "type": "Country"
 }
-2016-12-17 12:54:15.197  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:21.655  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1420,7 +1420,7 @@ CONTENT
   "text": "Putin",
   "type": "Person"
 }
-2016-12-17 12:54:16.173  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:22.588  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1432,7 +1432,7 @@ CONTENT
   "text": "Oil futures",
   "type": "FieldTerminology"
 }
-2016-12-17 12:54:17.172  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:23.627  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1445,10 +1445,10 @@ CONTENT
   "text": "Bullard",
   "type": "Person"
 }
-2016-12-17 12:54:18.181  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:24.719  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:19.164  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:25.842  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1472,7 +1472,7 @@ CONTENT
   "text": "SEC",
   "type": "Organization"
 }
-2016-12-17 12:54:20.209  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:27.003  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1493,7 +1493,7 @@ CONTENT
   "text": "Richmond",
   "type": "Person"
 }
-2016-12-17 12:54:21.049  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:27.821  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1530,7 +1530,7 @@ CONTENT
   "text": "U.S.",
   "type": "Country"
 }
-2016-12-17 12:54:22.178  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=baker hughes, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 20:21:58 EET 2016)]
+2016-12-17 13:10:28.747  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=baker hughes, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 20:21:58 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1543,7 +1543,7 @@ CONTENT
   "text": "Nasdaq",
   "type": "FinancialMarketIndex"
 }
-2016-12-17 12:54:23.201  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:29.941  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1574,7 +1574,7 @@ CONTENT
   "text": "Fed",
   "type": "Organization"
 }
-2016-12-17 12:54:24.225  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:30.893  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1591,7 +1591,7 @@ CONTENT
   "count": 1,
   "relevance": 0.33,
   "sentiment": {
-    "score": -0.474326,
+    "score": -0.474325,
     "type": "negative"
   },
   "text": "SEC",
@@ -1607,7 +1607,7 @@ CONTENT
   "text": "New York AG",
   "type": "Company"
 }
-2016-12-17 12:54:25.186  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:31.918  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1648,7 +1648,7 @@ CONTENT
   "text": "Dow",
   "type": "Company"
 }
-2016-12-17 12:54:26.581  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=general electric, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 18:03:39 EET 2016)]
+2016-12-17 13:10:33.059  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=general electric, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 18:03:39 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1660,7 +1660,7 @@ CONTENT
   "text": "Nasdaq",
   "type": "FinancialMarketIndex"
 }
-2016-12-17 12:54:27.628  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:34.146  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1698,7 +1698,7 @@ CONTENT
   "text": "U.S.",
   "type": "Country"
 }
-2016-12-17 12:54:28.432  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:35.146  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1719,7 +1719,7 @@ CONTENT
   "text": "Chipotle",
   "type": "Company"
 }
-2016-12-17 12:54:29.416  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:36.118  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1731,10 +1731,10 @@ CONTENT
   "text": "Wells Fargo",
   "type": "City"
 }
-2016-12-17 12:54:30.369  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 16:30:27 EET 2016)]
+2016-12-17 13:10:37.040  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 16:30:27 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:31.431  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:37.961  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1767,7 +1767,7 @@ CONTENT
   "text": "analyst",
   "type": "JobTitle"
 }
-2016-12-17 12:54:32.328  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=nordstrom, sentiment=-0.484957, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 15:54:18 EET 2016)]
+2016-12-17 13:10:39.086  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=nordstrom, sentiment=-0.484957, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 15:54:18 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1789,7 +1789,7 @@ CONTENT
   "text": "$1 billion",
   "type": "Quantity"
 }
-2016-12-17 12:54:33.397  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=cummins, sentiment=0.480723, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 15:42:54 EET 2016)]
+2016-12-17 13:10:40.115  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=cummins, sentiment=0.480723, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 15:42:54 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1807,10 +1807,10 @@ CONTENT
   "text": "Mylan",
   "type": "Company"
 }
-2016-12-17 12:54:34.261  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:41.208  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:35.465  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:42.157  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1839,7 +1839,7 @@ CONTENT
   "text": "Department of Justice",
   "type": "Organization"
 }
-2016-12-17 12:54:36.465  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:43.048  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1860,7 +1860,7 @@ CONTENT
   "text": "Honeywell",
   "type": "Company"
 }
-2016-12-17 12:54:37.485  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:44.089  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1873,7 +1873,7 @@ CONTENT
   "text": "Aleppo",
   "type": "City"
 }
-2016-12-17 12:54:38.458  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:45.199  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1898,10 +1898,10 @@ CONTENT
   "text": "Ecuador",
   "type": "Country"
 }
-2016-12-17 12:54:39.557  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:46.326  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:40.687  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:47.451  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1914,10 +1914,10 @@ CONTENT
   "text": "Agios Pharma",
   "type": "Company"
 }
-2016-12-17 12:54:41.758  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:48.404  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:42.829  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:49.439  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1938,7 +1938,7 @@ CONTENT
   "text": "Oracle",
   "type": "Company"
 }
-2016-12-17 12:54:43.960  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:58:15 EET 2016)]
+2016-12-17 13:10:50.525  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.1, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:58:15 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1961,7 +1961,7 @@ CONTENT
   "text": "analyst",
   "type": "JobTitle"
 }
-2016-12-17 12:54:45.202  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=apple, sentiment=0.674848, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:29:47 EET 2016)]
+2016-12-17 13:10:51.430  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=apple, sentiment=0.674848, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 23:29:47 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1974,13 +1974,13 @@ CONTENT
   "text": "Trivago",
   "type": "Person"
 }
-2016-12-17 12:54:46.317  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:52.467  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:47.367  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:53.524  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:48.300  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:54.547  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -1993,7 +1993,7 @@ CONTENT
   "text": "Wells Fargo",
   "type": "Company"
 }
-2016-12-17 12:54:49.210  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
+2016-12-17 13:10:55.547  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -2006,13 +2006,13 @@ CONTENT
   "text": "Dow",
   "type": "FinancialMarketIndex"
 }
-2016-12-17 12:54:50.235  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:56.670  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:51.343  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:57.744  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:52.374  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:58.797  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -2025,10 +2025,10 @@ CONTENT
   "text": "Trivago",
   "type": "Person"
 }
-2016-12-17 12:54:53.484  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:10:59.950  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:54.557  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:11:01.037  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -2041,7 +2041,7 @@ CONTENT
   "text": "Wells Fargo",
   "type": "Company"
 }
-2016-12-17 12:54:55.552  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
+2016-12-17 13:11:02.096  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=wells fargo, sentiment=-0.26277, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 22:46:02 EET 2016)]
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -2054,13 +2054,13 @@ CONTENT
   "text": "Dow",
   "type": "FinancialMarketIndex"
 }
-2016-12-17 12:54:56.661  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:11:03.233  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:57.712  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:11:04.277  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
-2016-12-17 12:54:58.631  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : []
+2016-12-17 13:11:05.371  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : []
 Loading API KEY=aa85cc418203835f8ffdc869a48c92b56cbe241b
 CONTENT
 {
@@ -2113,8 +2113,8 @@ CONTENT
   "text": "MarketWatch",
   "type": "Company"
 }
-2016-12-17 12:54:59.656  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.248593, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 16:38:09 EET 2016)]
-2016-12-17 12:54:59.657  INFO 27683 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting reduce and store workers
+2016-12-17 13:11:06.427  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : [EntitySentiment(companyName=oracle, sentiment=0.248593, sentimentSum=0.0, sentimentCount=0, date=Fri Dec 16 16:38:09 EET 2016)]
+2016-12-17 13:11:06.427  INFO 28747 --- [           main] i.p.pestering.SentimentTaskmaster        : Starting reduce and store workers
 Saved null: oracle
 Saved null: nike
 Saved null: bed bath & beyond
@@ -2137,6 +2137,6 @@ Saved null: apple
 Saved null: wells fargo
 Saved null: wells fargo
 Saved null: oracle
-2016-12-17 12:55:06.109  INFO 27683 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 12:53:30 EET 2016]; root of context hierarchy
-2016-12-17 12:55:06.113  INFO 27683 --- [       Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
-2016-12-17 12:55:06.123  INFO 27683 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-12-17 13:11:12.889  INFO 28747 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2328c243: startup date [Sat Dec 17 13:09:35 EET 2016]; root of context hierarchy
+2016-12-17 13:11:12.894  INFO 28747 --- [       Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2016-12-17 13:11:12.912  INFO 28747 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
