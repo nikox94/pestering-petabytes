@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @Slf4j
 public class GoogleCloudConnector {
-	private static final String COMPANY_SENTIMENT_TIMEPOINT_KIND = "CompanySentimentTimePoint";
+	private static final String COMPANY_SENTIMENT_TIMEPOINT_KIND = "CompanySentimentTimePointTest";
 	private static final String COMPANY_NAME = "CompanyName";
 	private static final String DATE = "Date";
 	private static final String SENTIMENT = "Sentiment";
@@ -37,7 +37,7 @@ public class GoogleCloudConnector {
 
 	public EntitySentiment updateSentiment(final EntitySentiment entitySentiment) {
 		final Key taskKey = datastore.newKeyFactory().setKind(COMPANY_SENTIMENT_TIMEPOINT_KIND)
-				.newKey(entitySentiment.getCompanyName().hashCode());
+				.newKey(entitySentiment.getCompanyName().hashCode() + entitySentiment.getDate().getTime());
 
 		// Prepares the new entity
 		final Entity task = Entity.newBuilder(taskKey)
