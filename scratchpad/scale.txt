@@ -1,0 +1,9 @@
+Workers:
+	31 files x:
+		6M rows
+		220 MB
+	TOTAL: 7TB  ; 214E9 rows / worker
+
+Datasets sharded by date
+
+TOTAL size for WET files: 243 TB
