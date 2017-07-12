@@ -9,7 +9,7 @@ Login with the pestering.petabytes@gmail.com email. For now only it can access t
 
 ## Build
 
-To build run `maven clean install` in the top-level directory of the project.
+To build run `mvn clean install` in the top-level directory of the project.
 
 ## Run
 
