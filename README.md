@@ -1,11 +1,10 @@
 # pestering-petabytes
-Fundamental stock analysis
+Fundamental stock analysis using the http://commoncrawl.org/ petabyte-size database and the [Stanford NLP parser](https://nlp.stanford.edu/). The workload was crunched through with instances on Google Cloud Platform.
 
 ## Installation 
 In src/main/resources/ create a file "api_key" containing only the api key for Alchemy API.
 
-Install the gcloud command line tool and authenticate using `gcloud beta auth application-default login`.
-Login with the pestering.petabytes@gmail.com email. For now only it can access the table we use in Google Datastore.
+Install the gcloud command line tool and authenticate using `gcloud beta auth application-default login`. Use team email for access. For now only it can access the table we use in Google Datastore.
 
 ## Build
 
